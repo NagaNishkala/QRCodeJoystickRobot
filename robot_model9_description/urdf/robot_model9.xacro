@@ -1,0 +1,329 @@
+<?xml version="1.0" ?>
+<robot name="robot_model9" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find robot_model9_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find robot_model9_description)/urdf/robot_model9.trans" />
+<xacro:include filename="$(find robot_model9_description)/urdf/robot_model9.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.02366164694677067 1.1990478477263248e-16 0.01830228830629723"/>
+    <mass value="329.3286188584961"/>
+    <inertia ixx="47.812298" ixy="-0.0" ixz="-1.107359" iyy="52.557928" iyz="-0.0" izz="93.67127"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rear_right_wheel_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0 -0.07500000000000007 -3.209815078453193e-07"/>
+    <mass value="29.747053613448767"/>
+    <inertia ixx="0.685289" ixy="0.0" ixz="-0.0" iyy="1.259026" iyz="0.0" izz="0.685289"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.4575 0.61 0.049538"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/rear_right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.4575 0.61 0.049538"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/rear_right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="front_right_wheel_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="2.7755575615628914e-17 -0.07499999999999984 -3.2098150780368595e-07"/>
+    <mass value="29.74705361344877"/>
+    <inertia ixx="0.685289" ixy="0.0" ixz="-0.0" iyy="1.259026" iyz="0.0" izz="0.685289"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.1575 0.61 0.049538"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/front_right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.1575 0.61 0.049538"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/front_right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="front_leftt_wheel_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="2.7755575615628914e-17 0.07500000000000007 -3.2098150771348033e-07"/>
+    <mass value="29.74705361344877"/>
+    <inertia ixx="0.685289" ixy="0.0" ixz="0.0" iyy="1.259026" iyz="0.0" izz="0.685289"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.1575 -0.61 0.049538"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/front_leftt_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.1575 -0.61 0.049538"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/front_leftt_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rear_left_wheel_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="1.1102230246251565e-16 0.07500000000000007 -3.2098150767878586e-07"/>
+    <mass value="29.747053613448767"/>
+    <inertia ixx="0.685289" ixy="0.0" ixz="0.0" iyy="1.259026" iyz="0.0" izz="0.685289"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.4575 -0.61 0.049538"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/rear_left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.4575 -0.61 0.049538"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/rear_left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="vertical_body_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="4.513906575465132e-07 0.0 0.6813364595545133"/>
+    <mass value="14.466879999999998"/>
+    <inertia ixx="2.239043" ixy="0.0" ixz="0.0" iyy="2.239043" iyz="0.0" izz="0.026676"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.108759 -0.0 -0.194"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/vertical_body_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.108759 -0.0 -0.194"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/vertical_body_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rgbd_camera_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.004767481593612399 -2.919240536805602e-19 0.04999999999999999"/>
+    <mass value="6.3547497618390105"/>
+    <inertia ixx="0.246993" ixy="-0.0" ixz="-0.0" iyy="0.009422" iyz="-0.0" izz="0.245912"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.765 -0.0 0.05"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/rgbd_camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.765 -0.0 0.05"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/rgbd_camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lidar_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0 3.05380343897712e-17 0.04870026749058354"/>
+    <mass value="5.051088077638525"/>
+    <inertia ixx="0.023293" ixy="0.0" ixz="-0.0" iyy="0.023293" iyz="0.0" izz="0.038507"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.435 -0.0 -0.202"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.435 -0.0 -0.202"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="horizontal_body_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.47423303171345044 1.9582714612255298e-17 -0.0002180056519983653"/>
+    <mass value="3.938429999999996"/>
+    <inertia ixx="0.007469" ixy="-0.0" ixz="0.000227" iyy="0.854176" iyz="0.0" izz="0.857558"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.158759 -0.0 -0.844"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/horizontal_body_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.158759 -0.0 -0.844"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/horizontal_body_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="vertical_pickup_body_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.04787887444942718 -0.05575542449825093 -0.5128020476041976"/>
+    <mass value="3.3011829023328936"/>
+    <inertia ixx="0.183863" ixy="7e-05" ixz="0.000668" iyy="0.158497" iyz="-0.031306" izz="0.047022"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-1.196241 -0.0 -0.869"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/vertical_pickup_body_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-1.196241 -0.0 -0.869"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/vertical_pickup_body_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gripper_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="4.513906619596497e-07 -0.014999999999999986 -0.1063248523600743"/>
+    <mass value="1.1878142875593714"/>
+    <inertia ixx="0.004456" ixy="0.0" ixz="0.0" iyy="0.009497" iyz="0.0" izz="0.005219"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-1.148741 -0.18 -0.289"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/gripper_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-1.148741 -0.18 -0.289"/>
+    <geometry>
+      <mesh filename="package://robot_model9_description/meshes/gripper_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="rear_right_wheel_joint" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.4575 -0.61 -0.049538"/>
+  <parent link="base_link"/>
+  <child link="rear_right_wheel_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="front_right_wheel_joint" type="continuous">
+  <origin rpy="0 0 0" xyz="0.1575 -0.61 -0.049538"/>
+  <parent link="base_link"/>
+  <child link="front_right_wheel_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="front_left_wheel_joint" type="continuous">
+  <origin rpy="0 0 0" xyz="0.1575 0.61 -0.049538"/>
+  <parent link="base_link"/>
+  <child link="front_leftt_wheel_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="rear_left_wheel_joint" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.4575 0.61 -0.049538"/>
+  <parent link="base_link"/>
+  <child link="rear_left_wheel_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="twist_joint" type="revolute">
+  <origin rpy="0 0 0" xyz="-0.108759 0.0 0.194"/>
+  <parent link="base_link"/>
+  <child link="vertical_body_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <limit effort="100" lower="-3.141593" upper="3.141593" velocity="100"/>
+</joint>
+
+<joint name="rigid_camera_base" type="fixed">
+  <origin rpy="0 0 0" xyz="0.765 0.0 -0.05"/>
+  <parent link="base_link"/>
+  <child link="rgbd_camera_1"/>
+</joint>
+
+<joint name="camera_optical_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="${-pi/2} 0 ${-pi/2}"/>
+    <parent link="rgbd_camera_1"/>
+    <child link="camera_rgb_frame"/>
+  </joint>
+
+  <link name="camera_rgb_frame">
+  </link>
+
+  <joint name="camera_depth_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="${-pi/2} 0 ${-pi/2}"/>
+    <parent link="rgbd_camera_1"/>
+    <child link="camera_depth_frame"/>
+  </joint>
+
+    <link name="camera_depth_frame">
+  </link>
+
+
+<joint name="rigid_lidar_base" type="fixed">
+  <origin rpy="0 0 0" xyz="0.435 0.0 0.202"/>
+  <parent link="base_link"/>
+  <child link="lidar_1"/>
+</joint>
+
+<joint name="prismatic_vertical" type="prismatic">
+  <origin rpy="0 0 0" xyz="-0.05 0.0 0.65"/>
+  <parent link="vertical_body_1"/>
+  <child link="horizontal_body_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <limit effort="5000000" lower="-0.4" upper="0.55" velocity="5000000"/>
+</joint>
+
+<joint name="prismatic_horizontal" type="prismatic">
+  <origin rpy="0 0 0" xyz="1.355 0.0 0.025"/>
+  <parent link="horizontal_body_1"/>
+  <child link="vertical_pickup_body_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+  <limit effort="100" lower="0.0" upper="1.0" velocity="100"/>
+</joint>
+
+<joint name="prismatic_gripper" type="prismatic">
+  <origin rpy="0 0 0" xyz="-0.0475 0.18 -0.58"/>
+  <parent link="vertical_pickup_body_1"/>
+  <child link="gripper_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+  <limit effort="100" lower="-0.25" upper="0.0" velocity="100"/>
+</joint>
+
+</robot>
