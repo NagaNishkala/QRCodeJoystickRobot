@@ -16,3 +16,8 @@ In terminal 2:
 ------------>python3 qrcodecmdvel.py
 
 Show any QR Code and play around with the robot!
+
+
+
+https://user-images.githubusercontent.com/67292446/218695721-38c3ae90-03cc-4af0-8df8-0f673373c7fe.mp4
+
